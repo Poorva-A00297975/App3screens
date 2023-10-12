@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".glambag">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/activity_header"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="411dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="72dp"
+        android:background="#E481D7"
+        android:text="Hello BoxyCharmer,"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="413dp"
+        android:layout_height="551dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/img_2358" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="138dp"
+        android:layout_height="53dp"
+        android:background="#E884DB"
+        android:backgroundTint="#D489E1"
+        android:text="Support"
+        app:icon="@android:drawable/stat_sys_headset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toEndOf="@+id/include"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="138dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="305dp"
+        android:background="#e884db"
+        android:backgroundTint="#d489e1"
+        android:text="Home"
+        app:icon="@drawable/house_icon_vector_illustration"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/include"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="141dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="16dp"
+        android:background="#E884DB"
+        android:backgroundTint="#D489E1"
+        android:text="SHOP"
+        app:icon="@android:drawable/ic_menu_today"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button11"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:layout_constraintVertical_bias="0.791" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
